@@ -1,0 +1,9 @@
+$trans: all 0.13s ease-in-out;
+/////functions///
+// pixels to vw
+@function ptw($scrnWidth, $pxls) {
+  $res: calc($pxls/$scrnWidth * 100vw);
+  @return $res;
+}
+///sass settings///
+/// sass --watch scss/main.scss dist/main.css
