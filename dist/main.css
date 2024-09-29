@@ -15,6 +15,8 @@ body {
   /* min-height: 100%; - if attribution don't want to stick to bottom  */
   margin: 0;
   padding: 0;
+  font-size: 18px;
+  font-family: "DM Sans", sans-serif;
   /* //position: relative; ///for footer with absolute position --> */
 }
 body h1,
