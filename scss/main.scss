@@ -18,11 +18,11 @@
     .gridCard {
       border-radius: 8px;
       padding: 22px;
-    }
-    h2 {
-      font-weight: 500;
-      letter-spacing: -0.05em;
-      line-height: 0.9;
+      h2 {
+        font-weight: 500;
+        letter-spacing: -0.05em;
+        line-height: 0.9;
+      }
     }
     .createAndWrite {
       grid-column: 1/2;
@@ -100,7 +100,6 @@
       grid-column: 2/3;
       grid-row: 2/3;
       overflow: hidden;
-
       background-color: $white;
       img {
         position: absolute;
@@ -178,3 +177,4 @@
     }
   }
 }
+@import "mediaQs";
