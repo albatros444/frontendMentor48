@@ -66,9 +66,8 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  padding: 80px;
-  padding-bottom: 65px;
+  min-height: 100vh;
+  padding: 80px 0px 65px;
   background-color: hsl(0, 0%, 96%);
 }
 .background .gridBlock {
@@ -173,6 +172,7 @@ ul {
 .background .gridBlock .manage img {
   width: 320px;
   margin-left: 12px;
+  margin-bottom: 15px;
   box-shadow: -10px 10px 10px hsl(0, 0%, 97%);
 }
 .background .gridBlock .manage h2 {
@@ -261,7 +261,7 @@ ul {
   color: hsl(0, 0%, 100%);
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .background {
     height: 100%;
     padding: 30px 16px 10px;
@@ -274,8 +274,9 @@ ul {
   }
   .background .gridBlock .gridCard {
     height: auto;
-    width: 100%;
+    max-width: 450px;
     padding: 16px;
+    margin: 0 auto;
   }
   .background .gridBlock .hero {
     grid-column: 1/2;
@@ -299,9 +300,11 @@ ul {
     padding-left: 18px;
   }
   .background .gridBlock .manage img {
+    display: block;
     width: 100%;
+    max-width: 320px;
     margin-left: 0;
-    margin-bottom: 12px;
+    margin-bottom: 17px;
   }
   .background .gridBlock .manage h2 {
     font-size: 26px;
@@ -329,8 +332,11 @@ ul {
     margin-bottom: 25px;
   }
   .background .gridBlock .schedule img {
+    display: block;
     position: static;
     width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
     margin-bottom: 20px;
   }
   .background .gridBlock .schedule p {
@@ -348,7 +354,8 @@ ul {
   }
   .background .gridBlock .growFollowers h2 {
     padding: 0 50px;
-    font-size: 30px;
+    font-size: 31px;
+    letter-spacing: -0.03em;
     text-align: center;
   }
   .background .gridBlock .growFollowers img {
@@ -358,6 +365,7 @@ ul {
   .background .gridBlock .audienceGrowth {
     grid-column: 1/2;
     grid-row: 6/7;
+    width: 100%;
     padding: 25px 25px 18px;
   }
   .background .gridBlock .audienceGrowth h2 {
@@ -385,10 +393,107 @@ ul {
   }
   .background .gridBlock .createAndWrite .write {
     height: auto;
+    width: 100%;
   }
   .background .gridBlock .createAndWrite .write h2 {
     margin-top: 7px;
     margin-bottom: 25px;
+  }
+}
+@media screen and (max-width: 1220px) and (min-width: 931px) {
+  .background {
+    padding: 60px 0px 45px;
+  }
+  .background .gridBlock {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 325px 245px 245px 245px;
+    width: 830px;
+  }
+  .background .gridBlock .createAndWrite {
+    grid-row: 2/5;
+  }
+  .background .gridBlock .createAndWrite .create {
+    height: 380px;
+    padding-top: 65px;
+    padding-bottom: 20px;
+  }
+  .background .gridBlock .createAndWrite .write {
+    height: 400px;
+  }
+  .background .gridBlock .createAndWrite .write h2 {
+    margin-bottom: 30px;
+  }
+  .background .gridBlock .hero {
+    grid-column: 1/3;
+  }
+  .background .gridBlock .manage {
+    grid-row: 4/5;
+  }
+  .background .gridBlock .maintain {
+    grid-row: 4/5;
+  }
+  .background .gridBlock .schedule {
+    grid-column: 3/4;
+  }
+  .background .gridBlock .audienceGrowth {
+    grid-row: 2/3;
+  }
+  .background .gridBlock .growFollowers {
+    grid-column: 2/4;
+  }
+}
+@media screen and (max-width: 930px) and (min-width: 601px) {
+  .background {
+    padding: 45px 0px 30px;
+  }
+  .background .gridBlock {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 325px 260px 260px 245px 245px 245px;
+    width: 540px;
+  }
+  .background .gridBlock .createAndWrite {
+    grid-row: 2/5;
+  }
+  .background .gridBlock .createAndWrite .create {
+    height: 390px;
+    padding-top: 75px;
+    padding-bottom: 20px;
+  }
+  .background .gridBlock .createAndWrite .write {
+    height: 410px;
+  }
+  .background .gridBlock .createAndWrite .write h2 {
+    margin-bottom: 30px;
+  }
+  .background .gridBlock .hero {
+    grid-column: 1/3;
+  }
+  .background .gridBlock .manage {
+    grid-row: 4/5;
+  }
+  .background .gridBlock .maintain {
+    grid-column: 2/3;
+    grid-row: 6/7;
+  }
+  .background .gridBlock .schedule {
+    grid-column: 2/3;
+    grid-row: 2/4;
+  }
+  .background .gridBlock .schedule img {
+    width: 320px;
+    top: 120px;
+  }
+  .background .gridBlock .schedule h2 {
+    margin-top: 15px;
+    margin-bottom: 335px;
+  }
+  .background .gridBlock .audienceGrowth {
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+  .background .gridBlock .growFollowers {
+    grid-column: 1/3;
+    grid-row: 5/6;
   }
 }
 

@@ -1,0 +1,100 @@
+@media screen and (max-width: 1220px) and (min-width: 931px) {
+  .background {
+    padding: 60px 0px 45px;
+
+    // background-color: red;
+    .gridBlock {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 325px 245px 245px 245px;
+      width: 830px;
+      .createAndWrite {
+        grid-row: 2/5;
+        .create {
+          height: 380px;
+          padding-top: 65px;
+          padding-bottom: 20px;
+        }
+        .write {
+          height: 400px;
+          h2 {
+            margin-bottom: 30px;
+          }
+        }
+      }
+      .hero {
+        grid-column: 1/3;
+      }
+      .manage {
+        grid-row: 4/5;
+      }
+      .maintain {
+        grid-row: 4/5;
+      }
+      .schedule {
+        grid-column: 3/4;
+      }
+      .audienceGrowth {
+        grid-row: 2/3;
+      }
+      .growFollowers {
+        grid-column: 2/4;
+      }
+    }
+  }
+}
+@media screen and (max-width: 930px) and (min-width: 601px) {
+  .background {
+    padding: 45px 0px 30px;
+
+    // background-color: green;
+    .gridBlock {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 325px 260px 260px 245px 245px 245px;
+      width: 540px;
+      .createAndWrite {
+        grid-row: 2/5;
+        .create {
+          height: 390px;
+          padding-top: 75px;
+          padding-bottom: 20px;
+        }
+        .write {
+          height: 410px;
+          h2 {
+            margin-bottom: 30px;
+          }
+        }
+      }
+      .hero {
+        grid-column: 1/3;
+      }
+      .manage {
+        grid-row: 4/5;
+      }
+      .maintain {
+        grid-column: 2/3;
+        grid-row: 6/7;
+      }
+      .schedule {
+        grid-column: 2/3;
+        grid-row: 2/4;
+        img {
+          width: 320px;
+          top: 120px;
+        }
+        h2 {
+          margin-top: 15px;
+          margin-bottom: 335px;
+        }
+      }
+      .audienceGrowth {
+        grid-column: 1/2;
+        grid-row: 6/7;
+      }
+      .growFollowers {
+        grid-column: 1/3;
+        grid-row: 5/6;
+      }
+    }
+  }
+}

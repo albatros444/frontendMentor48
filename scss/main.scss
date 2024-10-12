@@ -6,9 +6,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  padding: 80px;
-  padding-bottom: 65px;
+  min-height: 100vh;
+  padding: 80px 0px 65px;
   background-color: hsl(0, 0%, 96%);
   .gridBlock {
     display: grid;
@@ -115,6 +114,7 @@
         // position: absolute;
         width: 320px;
         margin-left: 12px;
+        margin-bottom: 15px;
         box-shadow: -10px 10px 10px hsl(0, 0%, 97%);
       }
       h2 {
@@ -207,3 +207,4 @@
   }
 }
 @import "mediaQs";
+@import "mediaQmiddle";

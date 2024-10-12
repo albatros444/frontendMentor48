@@ -1,4 +1,4 @@
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .background {
     height: 100%;
     padding: 30px 16px 10px;
@@ -9,8 +9,9 @@
       height: auto;
       .gridCard {
         height: auto;
-        width: 100%;
+        max-width: 450px;
         padding: 16px;
+        margin: 0 auto;
       }
       .hero {
         grid-column: 1/2;
@@ -33,10 +34,11 @@
         overflow: hidden;
         padding-left: 18px;
         img {
-          // width: calc(100% - 32px);
+          display: block;
           width: 100%;
+          max-width: 320px;
           margin-left: 0;
-          margin-bottom: 12px;
+          margin-bottom: 17px;
         }
         h2 {
           font-size: 26px;
@@ -64,8 +66,11 @@
           margin-bottom: 25px;
         }
         img {
+          display: block;
           position: static;
           width: 100%;
+          max-width: 350px;
+          margin: 0 auto;
           margin-bottom: 20px;
         }
         p {
@@ -83,7 +88,8 @@
         padding: 25px 0px;
         h2 {
           padding: 0 50px;
-          font-size: 30px;
+          font-size: 31px;
+          letter-spacing: -0.03em;
           text-align: center;
         }
         img {
@@ -95,6 +101,7 @@
       .audienceGrowth {
         grid-column: 1/2;
         grid-row: 6/7;
+        width: 100%;
         padding: 25px 25px 18px;
         h2 {
           font-size: 45px;
@@ -121,6 +128,7 @@
         }
         .write {
           height: auto;
+          width: 100%;
           h2 {
             margin-top: 7px;
             margin-bottom: 25px;
